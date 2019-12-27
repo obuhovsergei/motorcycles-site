@@ -1,0 +1,32 @@
+{
+  "name": "react-motorcycles",
+  "version": "1.0.0",
+  "description": "Motorcycles SPA",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "frontend": "npm run start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "keywords": [
+    "React",
+    "NodeJS",
+    "MongoDB",
+    "Express"
+  ],
+  "author": "Obuhov Sergey <obuhov.sergey.cascad@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.3"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2",
+    "nodemon": "^2.0.2"
+  }
+}
