@@ -45,14 +45,14 @@ export const AuthPage = () => {
                 <form className="col s12" method="post">
                     <div className='row'>
                         <div className='input-field col s12'>
-                            <input className='validate' type='email' name='email' id='email' onChange={changeHandler}/>
+                            <input className='validate' type='email' name='email' id='email' value={form.email} onChange={changeHandler}/>
                             <label htmlFor='email'>Enter your email</label>
                         </div>
                     </div>
 
                     <div className='row'>
                         <div className='input-field col s12'>
-                            <input className='validate' type='password' name='password' id='password' onChange={changeHandler}/>
+                            <input className='validate' type='password' name='password' id='password' value={form.password} onChange={changeHandler}/>
                             <label htmlFor='password'>Enter your password</label>
                         </div>
                     </div>
