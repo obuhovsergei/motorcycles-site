@@ -5,7 +5,8 @@
     if(!links.length) return <p className="center">No have links</p>
     return (
         <ul className="collection" style={{marginTop:'2rem'}}>
-            {links.map(link => {
+            {
+                links.reverse().map(link => {
                 return (
                     <li key={link._id} className="collection-item avatar">
                         <i className="material-icons circle green">http</i>
@@ -14,10 +15,15 @@
                         To: {link.to} <br/>
                         Clicks: {link.clicks}
                         </p>
-                        <Link to={`/detail/${link._id}`} className="secondary-content"><i className="material-icons">send</i></Link>
+                        <Link to={`/detail/${link._id}`} className="secondary-content">
+                            <a className="waves-effect waves-light btn">GET
+                                <i className="material-icons right">send</i>
+                            </a>
+                        </Link>
                     </li>
                 )
-            })}
+                })
+            }
         </ul>
     )
  }
